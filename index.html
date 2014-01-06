@@ -1,0 +1,101 @@
+<div id="wrapper">
+	<ul>
+		<li><a href="#"><i class="icon-list-alt"></i>
+		<div>
+			 Type
+		</div>
+		</a></li>
+		<li><a href="#"><i class="icon-calendar"></i>
+		<div>
+			 Basic Settings
+		</div>
+		</a></li>
+		<li><a href="#"><i class="icon-globe"></i>
+		<div>
+			 Geo
+		</div>
+		</a></li>
+		<li><a href="#"><i class="icon-bullseye"></i>
+		<div>
+			 Target Groups
+		</div>
+		</a></li>
+		<li><a href="#"><i class="icon-picture"></i>
+		<div>
+			 Creatives
+		</div>
+		</a></li>
+		<li><a href="#"><i class="icon-list-alt"></i>
+		<div>
+			 Summery
+		</div>
+		</a></li>
+	</ul>
+</div>
+
+
+<style>
+body {
+  background-color: #f15050;
+  font-family: 'Open Sans', sans-serif;
+  #wrapper {
+    width: 100%;
+    ul {
+      box-sizing: border-box;
+      margin: 0 auto;
+      padding: 0;
+      height: 118px;
+      background-color: #fff;
+      font-size:0px;
+      &:hover {
+        li {
+          width:(100% / 6)/(5/4);
+        }
+      }
+      li {
+        display: inline-block;
+        float: left;
+        width:(100% / 6);
+        @include transition(all .1s);
+        text-align: center;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: padding-box;
+        box-sizing: border-box;
+        @include text-shadow(0px 1px 3px rgba(white,1));
+        border-right: thin solid lightgray;
+        &:last-child {
+          border-right:none;
+        }
+        &:hover {
+          background:rgba(230,230,230,1);
+          width:(100%/7)*2;
+          @include box-shadow(
+            inset 
+              10px 10px 10px -10px rgba(black,0.3),
+            inset 
+              -10px 10px 10px -10px rgba(black,0.3));
+        }
+        a {
+          display: block;
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: padding-box;
+          box-sizing: border-box;
+          padding-top: 19px;
+          height: 118px;
+          text-decoration: none;
+          font-size: 38px;
+          color: gray;
+          &:visited {
+            color: gray;
+          }
+        }
+        div {
+          margin-top: 5px;
+          font-weight: 600;
+          font-size: 13px;
+        }
+      }
+    }
+  }
+}
+</style>
